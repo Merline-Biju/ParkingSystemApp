@@ -204,7 +204,7 @@ public class BookingFragment extends Fragment {
         //Calculate Fair
         //If wallet has sufficient balance ://Update history
                                             //Update Parking Slot document
-                                            //Set user slot number to empty and transationId to empty and decuct amount from wallet
+                                            //Set user slot number to empty and transationId to empty and deduct amount from wallet
         //Else : Do nothing!!
 
         if(!user.getSlotNumber().isEmpty())
