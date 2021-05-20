@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartActivity"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rlStartLayout"
+        android:background="@color/white"
+        >
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ablAppbar"
+            android:background="@color/colorBlueDark">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:id="@+id/toolbar"
+                android:background="@color/colorBlueDark"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                android:elevation="8dp"/>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/colorAccent"
+            android:layout_centerHorizontal="true"
+            android:maxWidth="400dp"
+            android:layout_below="@id/ablAppbar"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="10dp"
+            android:id="@+id/llStartLayout">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/car_img"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvLogo"
+                android:text="@string/parking_system_app"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimaryText"
+                android:textStyle="bold|italic"
+                android:textSize="24sp"
+                android:layout_marginBottom="30dp"/>
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="@string/login"
+                android:textAllCaps="false"
+                android:textStyle="italic"
+                android:textSize="16sp"
+                android:id="@+id/btnLogin"
+                android:textColor="@color/white"
+                android:background="@drawable/button_background"
+                android:layout_marginBottom="10dp"/>
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="@string/register"
+                android:textAllCaps="false"
+                android:textStyle="italic"
+                android:textSize="16sp"
+                android:id="@+id/btnRegister"
+                android:textColor="@color/white"
+                android:background="@drawable/button_background"/>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

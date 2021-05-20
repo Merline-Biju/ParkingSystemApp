@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="@color/white">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/colorAccent"
+        android:layout_centerHorizontal="true"
+        android:maxWidth="400dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_below="@id/progressBar"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_background"
+            android:hint="Name"
+            android:textStyle="italic"
+            android:drawableStart="@drawable/ic_profile_pic"
+            android:drawableTint="@color/colorBlueDark"
+            android:textColor="@color/colorBlueDark"
+            android:drawablePadding="10dp"
+            android:textSize="14sp"
+            android:padding="10dp"
+            android:id="@+id/etName_Register"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="License plate number :"
+            android:textColor="@color/colorPrimaryText"
+            android:textStyle="italic"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_background_left"
+                android:hint="XX"
+                android:textStyle="italic"
+                android:drawableStart="@drawable/ic_booking"
+                android:drawableTint="@color/colorBlueDark"
+                android:gravity="center_horizontal"
+                android:textColor="@color/colorBlueDark"
+                android:drawablePadding="10dp"
+                android:textSize="14sp"
+                android:padding="10dp"
+                android:id="@+id/etLicense1_Register"
+                android:layout_weight="2"
+                android:layout_marginBottom="10dp"
+                android:inputType="text"
+                android:maxLength="2"
+                android:importantForAutofill="no"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_background_middle"
+                android:hint="00"
+                android:textStyle="italic"
+                android:textColor="@color/colorBlueDark"
+                android:gravity="center_horizontal"
+                android:drawablePadding="10dp"
+                android:textSize="14sp"
+                android:padding="10dp"
+                android:id="@+id/etLicense2_Register"
+                android:layout_weight="2"
+                android:layout_marginBottom="10dp"
+                android:inputType="number"
+                android:maxLength="2"
+                android:importantForAutofill="no"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_background_middle"
+                android:hint="XX"
+                android:textStyle="italic"
+                android:textColor="@color/colorBlueDark"
+                android:gravity="center_horizontal"
+                android:drawablePadding="10dp"
+                android:textSize="14sp"
+                android:padding="10dp"
+                android:id="@+id/etLicense3_Register"
+                android:layout_weight="2"
+                android:layout_marginBottom="10dp"
+                android:inputType="text"
+                android:maxLength="2"
+                android:importantForAutofill="no"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_background_right"
+                android:hint="0000"
+                android:textStyle="italic"
+                android:textColor="@color/colorBlueDark"
+                android:gravity="center_horizontal"
+                android:drawablePadding="10dp"
+                android:textSize="14sp"
+                android:padding="10dp"
+                android:id="@+id/etLicense4_Register"
+                android:layout_weight="4"
+                android:layout_marginBottom="10dp"
+                android:inputType="number"
+                android:maxLength="4"
+                android:importantForAutofill="no"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Driving License number :"
+            android:textColor="@color/colorPrimaryText"
+            android:textStyle="italic"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_background_left"
+                android:hint="XX00"
+                android:gravity="center_horizontal"
+                android:textStyle="italic"
+                android:drawableStart="@drawable/ic_name"
+                android:drawableTint="@color/colorBlueDark"
+                android:textColor="@color/colorBlueDark"
+                android:drawablePadding="10dp"
+                android:textSize="14sp"
+                android:padding="10dp"
+                android:layout_weight="4"
+                android:id="@+id/etdlNumber1_Register"
+                android:inputType="text"
+                android:layout_marginTop="10dp"
+                android:maxLength="4"
+                android:importantForAutofill="no"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_background_right"
+                android:hint="00000000000"
+                android:gravity="center_horizontal"
+                android:textStyle="italic"
+                android:textColor="@color/colorBlueDark"
+                android:drawablePadding="10dp"
+                android:textSize="14sp"
+                android:padding="10dp"
+                android:layout_weight="11"
+                android:id="@+id/etdlNumber2_Register"
+                android:inputType="number"
+                android:layout_marginTop="10dp"
+                android:maxLength="11"
+                android:importantForAutofill="no"/>
+
+        </LinearLayout>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_background"
+            android:hint="Phone"
+            android:textStyle="italic"
+            android:drawableStart="@drawable/ic_contact"
+            android:drawableTint="@color/colorBlueDark"
+            android:textColor="@color/colorBlueDark"
+            android:drawablePadding="10dp"
+            android:inputType="phone"
+            android:textSize="14sp"
+            android:padding="10dp"
+            android:id="@+id/etPhone_Register"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_background"
+            android:hint="Email"
+            android:textStyle="italic"
+            android:drawableStart="@drawable/ic_mail_at"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/colorBlueDark"
+            android:textColor="@color/colorBlueDark"
+            android:textSize="14sp"
+            android:padding="10dp"
+            android:id="@+id/etEmail_Register"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_background"
+            android:hint="Password"
+            android:textStyle="italic"
+            android:drawableStart="@drawable/ic_password"
+            android:drawableTint="@color/colorBlueDark"
+            android:textColor="@color/colorBlueDark"
+            android:drawablePadding="10dp"
+            android:inputType="textPassword"
+            android:textSize="14sp"
+            android:padding="10dp"
+            android:id="@+id/etPassword_Register"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:textStyle="italic"
+            android:textColor="@color/white"
+            android:id="@+id/btnRegister_Register"
+            android:background="@drawable/button_background"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:text="@string/already_registered"
+            android:onClick="goToLoginActivity"
+            android:textColor="@color/colorPrimaryText" />
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

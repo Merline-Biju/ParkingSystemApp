@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.WalletFragment"
+    android:background="@color/white">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/colorAccent"
+        android:layout_centerHorizontal="true"
+        android:maxWidth="400dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp"
+        android:id="@+id/llAvailable">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Available Balance :"
+            android:textStyle="italic"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="18sp"
+            android:layout_weight="3"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹"
+            android:id="@+id/tvAmount"
+            android:textStyle="italic"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="24sp"
+            android:layout_weight="2"
+            android:gravity="end"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llAvailable"
+        android:layout_margin="20dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter Amount"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textColor="@color/colorPrimaryText"
+            android:background="@drawable/edit_text_background"
+            android:id="@+id/etEnterAmount"/>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:id="@+id/btnAddAmount"
+            android:layout_below="@id/etEnterAmount"
+            android:layout_margin="10dp"
+            android:text="Add Amount"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:textStyle="italic"/>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_below="@id/btnAddAmount"
+           android:gravity="center_horizontal"
+           android:layout_marginTop="20dp">
+
+
+           <Button
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="@drawable/button_background"
+               android:id="@+id/btnAdd50"
+               android:layout_margin="10dp"
+               android:text="+50"
+               android:textColor="@color/white"
+               android:textStyle="italic"/>
+
+           <Button
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="@drawable/button_background"
+               android:id="@+id/btnAdd100"
+               android:layout_margin="10dp"
+               android:text="+100"
+               android:textColor="@color/white"
+               android:textStyle="italic"/>
+
+           <Button
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="@drawable/button_background"
+               android:id="@+id/btnAdd500"
+               android:layout_margin="10dp"
+               android:text="+500"
+               android:textColor="@color/white"
+               android:textStyle="italic"/>
+
+       </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

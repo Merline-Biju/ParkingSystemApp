@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "69289055981",
+    "project_id": "parking-system-app-dd26e",
+    "storage_bucket": "parking-system-app-dd26e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:69289055981:android:2e563649dee3a0b6e75ee4",
+        "android_client_info": {
+          "package_name": "com.abhishek.parkingsystemapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "69289055981-o6qlrrnlmj8js4uqe82114h47ub2njst.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxc1s7uVs0b5mlisWCAhNNAYnqLN6CYno"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "69289055981-o6qlrrnlmj8js4uqe82114h47ub2njst.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

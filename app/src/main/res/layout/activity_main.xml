@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rlMainLayout"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ablAppbar"
+            android:background="@android:color/transparent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:id="@+id/toolbar"
+                android:background="@color/colorBlueDark"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                android:elevation="8dp"
+                app:menu="@menu/toolbar_signout"/>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/ablAppbar"
+            android:id="@+id/fragment_container"
+            android:layout_above="@id/abBottom"/>
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/abBottom"
+            android:layout_alignParentBottom="true">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bnNav"
+                app:labelVisibilityMode="labeled"
+                android:background="@color/colorBlueDark"
+                app:itemTextColor="@drawable/bottom_navigation_selector"
+                app:itemIconTint="@drawable/bottom_navigation_selector"
+                app:menu="@menu/bottom_menu"
+                android:theme="@style/bottomNavigationSelect" />
+
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

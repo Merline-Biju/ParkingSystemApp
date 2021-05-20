@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.BookingFragment"
+    android:background="@color/white">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/colorAccent"
+        android:layout_centerHorizontal="true"
+        android:maxWidth="400dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:orientation="horizontal"
+        android:id="@+id/llSlots"
+        android:layout_below="@id/progressBar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No: of slots Available : "
+            android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal"
+            android:textStyle="italic"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryText"
+            android:layout_weight="3"
+            />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/number_0"
+            android:layout_weight="1"
+            android:id="@+id/ivNumber"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/llSlots"
+        android:id="@+id/llbuttons">
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Check Availability"
+            android:textColor="@color/white"
+            android:textStyle="italic"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:background="@drawable/button_background"
+            android:id="@+id/btnCheckAvailability"/>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Book Parking"
+            android:textColor="@color/white"
+            android:textStyle="italic"
+            android:gravity="center"
+            android:background="@drawable/button_background"
+            android:id="@+id/btnBookSlot"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llbuttons"
+        android:id="@+id/rlHidden"
+        android:layout_margin="10dp"
+        android:background="@drawable/layout_ripple"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:clickable="true">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/car_img"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

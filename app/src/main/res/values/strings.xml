@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ParkingSystemApp</string>
+    <string name="parking_system_app">Parking System <br />App</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+
+    <string name="not_yet_registered">Not yet Registered? <u>Click here!!</u></string>
+    <string name="already_registered">Already registered? <u>Click here</u> to login!!</string>
+    <string name="welcome_back">Welcome back!!\nSign in to continue..</string>
+    <string name="forgot_password">Forgot Password? <br /> Dont worry, <u>Click here!!</u></string>
+    <string name="sign_out">Sign Out</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.ProfileFragment"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="start"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/profilePic"
+                android:src="@drawable/profile_pic"
+                android:background="@drawable/circle_image_background"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvusername"
+                android:text=""
+                android:textColor="@color/colorPrimaryText"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                android:gravity="end"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:drawableStart="@drawable/ic_profile_pic"
+                android:drawableTint="@color/colorBlueDark"
+                android:drawablePadding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvemail"
+                android:text=""
+                android:textColor="@color/colorPrimaryText"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:gravity="end"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:textStyle="italic"
+                android:drawableStart="@drawable/ic_mail_at"
+                android:drawableTint="@color/colorBlueDark"
+                android:drawablePadding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvphoneNumber"
+                android:text=""
+                android:textColor="@color/colorPrimaryText"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textStyle="italic"
+                android:gravity="end"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:drawableStart="@drawable/ic_contact"
+                android:drawableTint="@color/colorBlueDark"
+                android:drawablePadding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvdriverLicense"
+                android:text=""
+                android:textColor="@color/colorPrimaryText"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textStyle="italic"
+                android:gravity="end"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:drawableStart="@drawable/ic_booking"
+                android:drawableTint="@color/colorBlueDark"
+                android:drawablePadding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvlicensePlate"
+                android:text=""
+                android:textColor="@color/colorPrimaryText"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textStyle="italic"
+                android:gravity="end"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:drawableStart="@drawable/ic_name"
+                android:drawableTint="@color/colorBlueDark"
+                android:drawablePadding="10dp"/>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
