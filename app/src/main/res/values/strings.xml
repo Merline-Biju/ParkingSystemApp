@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">ParkingSystemApp</string>
+    <string name="app_name">Parking System App</string>
     <string name="parking_system_app">Parking System <br />App</string>
     <string name="login">Login</string>
     <string name="register">Register</string>
