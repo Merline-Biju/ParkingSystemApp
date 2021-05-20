@@ -70,8 +70,13 @@ public class WalletFragment extends Fragment {
         btnAddAmount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                amount = Integer.parseInt(etEnterAmount.getText().toString().trim());
-                openDialog(amount);
+                if(!etEnterAmount.getText().toString().isEmpty()){
+                    amount = Integer.parseInt(etEnterAmount.getText().toString().trim());
+                    openDialog(amount);
+                }
+                else{
+                    Toast.makeText(getActivity(), "Input a number!!", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
